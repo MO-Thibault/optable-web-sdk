@@ -73,4 +73,4 @@ googletag.cmd.push(function () {
 ```
 
 ## Try it
-Check our demo pages for [GAM Secure Signals]([https://demo.optable.co/integration/lmpid-prebid-gpt.html?cookies=yes](https://demo.optable.co/integration/lmpid-signal-gpt.html?cookies=yes) and [Prebid.js](https://demo.optable.co/integration/lmpid-prebid-gpt.html?cookies=yes) integrations.
+Check our demo pages for [GAM Secure Signals](https://demo.optable.co/integration/lmpid-signal-gpt.html?cookies=yes) and [Prebid.js](https://demo.optable.co/integration/lmpid-prebid-gpt.html?cookies=yes) integrations.
