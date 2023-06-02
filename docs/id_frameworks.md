@@ -13,20 +13,20 @@ Optable [web SDK](https://github.com/Optable/optable-web-sdk) has to be installe
 
 The `identify` API enables you to associate a user's browser with a known identifier, such as an email address or a publisher assigned user ID.
 
-The `targeting` API retrieves targeting data, including the ID `frameworks` ids when available, and stores it in browser local storage for subsequent retrieval.
+The `targeting` API retrieves targeting data, including the `ID frameworks` ids when available, and stores it in browser local storage for subsequent retrieval.
 
 ## Additional configuration
 ### UID2.0 - The Trade Desk
 
 No additional configuration required
 
-### Loblaw Media Private ID (LMPID) - Through GPT Secure Signals
+### Private IDs - Through GPT Secure Signals
 
 You must call the `installGPTSecureSignals()` SDK API shortly after Optable SDK instantiation. This API will configure GPT to pass `lmpid` to Google Ad Manager (GAM), when it is available in browser local storage.
 
-Try to call the Optable SDK `targeting()` API as early as possible. This API will retrieve the latest lmpid, when it is enabled and available for the current user, and store it in browser local storage for retrieval by GPT as previously described.
+Try to call the Optable SDK `targeting()` API as early as possible. This API will retrieve the latest `lmpid`, when it is enabled and available for the current user, and store it in browser local storage for retrieval by GPT as previously described.
 
-### Loblaw Media Private ID (LMPID) - Through prebid.js
+### Private IDs - Through prebid.js
 
 For Prebid.js installations, you must make sure to include the `mabidder` bidder adapter and the `lmpid` user ID module. Note that you must include `mabidder` in the `addAdUnits()` call. See [Prebid.js download instructions](https://docs.prebid.org/download.html) and [Prebid.js user ID modules](https://docs.prebid.org/dev-docs/modules/userId.html#user-id-sub-modules) for details.
 
